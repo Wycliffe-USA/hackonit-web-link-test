@@ -35,4 +35,16 @@ Helpful Skills:
 
 Setup/Prerequisites:
 ●	Vagrant loaded on your machine
-●	Download and setup Vagrant VM when available
+●	Download and setup Vagrant VM 
+●	Confirm Vagrant setup by running Selenium tests -
+        1. start Vagrant vm
+        2. in xterm window: python3 testing/sample/sample_chrome.py
+            result: Chrome
+                    Home - Wycliffe Bible Translators
+        3. in xterm window: python3 testing/sample/sample_firefox.py
+            result: Firefox
+                    Home - Wycliffe Bible Translators
+        4. Vagrant Selenium environment is setup with Chrome and Firefox
+        
+                    
+
