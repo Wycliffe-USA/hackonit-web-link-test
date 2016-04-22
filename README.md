@@ -46,5 +46,9 @@ Setup/Prerequisites:
                     Home - Wycliffe Bible Translators
         4. Vagrant Selenium environment is setup with Chrome and Firefox
         
-                    
+●	Test case: python3 /testing/links/testsingle_dropdown.py
+
+
+
+
 

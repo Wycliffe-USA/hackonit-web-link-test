@@ -17,7 +17,7 @@ class BaseTest(unittest.TestCase):
 ################################
   
     def setUp(self):
-        self.driver = webdriver.Firefox()
+        self.driver = webdriver.Chrome()
         self.driver.maximize_window()
         time.sleep(3)
         # self.driver.implicitly_wait(30)
