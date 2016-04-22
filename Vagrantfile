@@ -15,10 +15,8 @@ Vagrant.configure("2") do |config|
   # the path on the host to the actual folder. The second argument is
   # the path on the guest to mount the folder. And the optional third
   # argument is a set of non-required options.
-  # config.vm.synced_folder "../data", "/vagrant_data"
   # config.vm.synced_folder ".", "/vagrant", type: "virtualbox"
-    config.vm.synced_folder "testing", "/home/vagrant/testing"
-  #    , type: "rsync", rsync_exclude: ".git/"
+  config.vm.synced_folder "testing", "/testing"
   
   config.vm.network :forwarded_port, guest:4444, host:4444
   # config.vm.network :forwarded_port, guest:80, host:80

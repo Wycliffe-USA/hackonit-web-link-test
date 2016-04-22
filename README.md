@@ -12,14 +12,14 @@ An automated testing effort has started, but the tests are currently programmed 
 
 Problem Inputs/Resources: 
 •	Program languages:
-o	Python
-o	JavaScript
-o	Other
+    o	Python
+    o	JavaScript
+    o	Other
 •	Testing environment:
-o	Vagrant setup of Docker with Selenium testing
+    o	Vagrant setup of Docker with Selenium testing
 •	Sources: 
-o	Wycliffe.org
-o	GitHub
+    o	Wycliffe.org
+    o	GitHub
 
 Problem Outputs/Goals:
 ●	How to walk through the links/elements on the Wycliffe.org pages and links? 
@@ -28,9 +28,9 @@ Problem Outputs/Goals:
 
 Helpful Skills:
 ●	Code languages:
-○	Python
-○	JavaScript
-○	Other languages as needed
+    ○	Python
+    ○	JavaScript
+    ○	Other languages as needed
 ●	Familiarity with JSON or XML 
 
 Setup/Prerequisites:
@@ -38,10 +38,10 @@ Setup/Prerequisites:
 ●	Download and setup Vagrant VM 
 ●	Confirm Vagrant setup by running Selenium tests -
         1. start Vagrant vm
-        2. in xterm window: python3 testing/sample/sample_chrome.py
+        2. in xterm window: python3 /testing/sample/sample_chrome.py
             result: Chrome
                     Home - Wycliffe Bible Translators
-        3. in xterm window: python3 testing/sample/sample_firefox.py
+        3. in xterm window: python3 /testing/sample/sample_firefox.py
             result: Firefox
                     Home - Wycliffe Bible Translators
         4. Vagrant Selenium environment is setup with Chrome and Firefox
