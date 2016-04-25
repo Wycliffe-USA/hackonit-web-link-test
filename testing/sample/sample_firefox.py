@@ -1,5 +1,9 @@
-from selenium import webdriver
+""" remote_chrome.py
+28 March 2016
+Verify Selenium installation for Firefox browser inside the local Selenium Vagrant VM
+"""
 import traceback
+from selenium import webdriver
 browser = None
 
 try:

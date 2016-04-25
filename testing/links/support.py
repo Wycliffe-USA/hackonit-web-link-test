@@ -1,4 +1,10 @@
-# -*- coding: utf-8 -*-
+""" support.py
+28 March 2016 - Donald Bell
+Encapsulate python/selenium functions for use on Wycliffe.org user experience testing.
+"""
+import re
+import time
+import unittest
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
@@ -8,7 +14,7 @@ from selenium.common.exceptions import NoSuchElementException
 from selenium.common.exceptions import NoAlertPresentException
 from selenium.webdriver.support import expected_conditions
 from selenium.webdriver.support.ui import WebDriverWait
-import unittest, time, re
+
 
 class BaseTest(unittest.TestCase):
 
@@ -150,7 +156,7 @@ class BaseTest(unittest.TestCase):
             result.append(beta)
 
 # this method "link_test" was lifted wholesale from drop_down_.py
-# but it does too many things and needs to be broken up a bit
+# but it does too many things and needs to be broken up a bit TODO
 
     def link_test(self, top_link, sub_link, regexp_target, return_link):
         driver = self.driver

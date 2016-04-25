@@ -1,13 +1,19 @@
+""" testsingle_dropdown.py
+28 March 2016 - Donald Bell
+Test the links from the first menu item "Get Involved" on Wycliffe.org
+    using python3
+TODO: replace static link references with catalog, dynamic list build, 
+    error tracking connect to ELK (or equivelant), monitor dashboard        
+"""
+import unittest
+import re
 from support import BaseTest
-import unittest, re
-# testsingle_dropdown.py
-# 28 March 2016 - Donald Bell
 
 class TestingDropDown(BaseTest):
            
     def test_drop_down(self):
-# each link URL list has Button Text, Page Title and Page URL (as reg ex)
-# Get Involved
+    # Check Button Text, Page Title and Page URL (as reg ex) for each
+    #     link on Get Involved
         link_url_list_1 = ["Serve", "Join Us - Wycliffe Bible Translators", \
                 r"https://www.wycliffe.org/serve/*", \
             "Pray With Us", "Prayer - Wycliffe Bible Translators", \
